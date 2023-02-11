@@ -40,7 +40,7 @@ const App = () => {
 			</div>
 
 			<div className='w-full text-center text-xs text-gray-400 mt-4 md:mt-6'>
-				<span>ip.byg.dev uses </span>
+				<span>data uses </span>
 				<a href='https://ip.sb/' target='_blank' className='underline'>
 					ip.sb
 				</a>
