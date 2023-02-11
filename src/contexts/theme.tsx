@@ -11,12 +11,12 @@ export const ThemeContextProvider = ({ children }: { children: JSX.Element }) =>
 	const [themeDark, setThemeDark] = useState(true)
 
 	useEffect(() => {
-		setThemeDark(localStorage.getItem('dark') !== '1')
+		setThemeDark(localStorage.getItem('dark') !== '0')
 	}, [])
 
 	useEffect(() => {
 		document.querySelector('html')?.classList[themeDark ? 'add' : 'remove']('dark')
-		localStorage.setItem('dark', themeDark ? '0' : '1')
+		localStorage.setItem('dark', themeDark ? '1' : '0')
 	}, [themeDark])
 
 	return (
